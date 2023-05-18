@@ -1,0 +1,248 @@
+@import url('https://fonts.googleapis.com/css2?family=Rubik:ital@1&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Krona+One&family=Montserrat:wght@400;600&display=swap');
+
+:root {
+    --bk--: #FCDEC0;
+    --primaria--: #C68B59;
+    --secundaria--: #865439;
+    --terciaria--: #8FC1D4;
+    --preto--: #000000;
+
+    --rubik--:'Rubik', sans-serif;
+    --krona--: 'Krona One', sans-serif;
+    --montserrat--: 'Montserrat', sans-serif;
+
+}
+
+*{
+    margin:0;
+    padding: 0;
+}
+
+body {
+    display: flex;
+    box-sizing: border-box;
+    background-color: var(--bk--);
+    color: var(--secundaria--);
+    flex-direction: column;
+    align-items: stretch;
+
+}
+
+/* ---------------------------------------------------------------------- */
+
+.cabecalho {
+    display: flex;
+justify-content: center;
+    padding: 2%;
+    border-bottom: 4px solid var(--primaria--);
+    
+}
+
+.cabecalho__menu {
+    display: flex;
+    justify-content: center;
+    gap: 10%;
+
+
+}
+
+.cabecalho__menu__links {
+    font-family: var(--rubik--);
+    font-size: 1.25rem;
+    font-weight: 600;
+    color: var(--secundaria--);
+    text-decoration: underline var(--terciaria--);
+    
+
+}
+
+.cabecalho__menu__links:hover {
+    color: var(--primaria--);
+    text-decoration: underline var(--secundaria--);
+}
+
+/* ---------------------------------------------------------------------- */
+
+.main {
+    padding:5% 14%;
+    display: flex;
+    align-items: center;
+    justify-content: stretch;
+    flex-direction: column;
+}
+
+.main_texto {
+    width: 50%;
+    display: flex;
+    flex-direction: column;
+    gap: 40px;
+}
+
+.main_textoimg {
+    padding:3.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    width: 60%;
+
+}
+
+.main_textoimg2 {
+    padding:3.5% 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 10%;
+    width: 60%;
+
+}
+
+
+
+.main_texto_titulo {
+    text-align: center;
+    font-size: 2.25rem;
+    font-family: var(--rubik--);
+    text-decoration: 4px underline var(--terciaria--);
+
+
+
+}
+
+.main_texto_paragrafo {
+    text-align: justify;
+    font-size: 1.5rem;
+    font-family: var(--montserrat--);
+}
+
+
+.repositorio {
+    padding: 5% 2% 5% 2%;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 90px;
+    flex-direction: column;
+    font-family: var(--rubik--);
+    font-size: 2.25rem;
+    text-decoration:  underline solid var(--terciaria--);
+
+}
+
+.repositorio_texto {
+
+    display: flex;
+    align-items: baseline;
+    justify-content: space-between;
+    gap: 10%;
+
+
+}
+
+.repositorio_videos {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 30px;
+    justify-content: space-between;
+
+}
+
+.video {
+    background-color: var(--preto--);
+    border: 4px solid var(--terciaria--);
+    width: 20%;
+
+    border-radius: 20px;
+}
+
+.img_fuba {
+    border: 3px solid var(--terciaria--);
+    border-radius: 2px;
+    width: 50%;
+    border-radius: 7%;
+
+
+
+}
+
+.main__links {
+    display: flex;
+    justify-content: space-between;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    gap: 32px;
+}
+
+.main__links__titulo {
+    display: flex;
+    font-size: 1.5rem;
+    font-family: var(--krona--);
+    font-weight: 400;
+
+}
+
+.main__links__link {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    width: 50%;
+    text-align: center;
+    border-radius: 8px;
+    font-size: 1.5rem;
+    font-weight: 600;
+    padding: 5% 0px;
+    text-decoration: none;
+    color: var(--secundaria--);
+    font-family: var(--montserrat--);
+
+    border: 2px solid var(--terciaria--);
+
+}
+
+.main__links__link:hover {
+    color: var(--bk--);
+    background-color: var(--terciaria--);
+    border: 2px solid var(--secundaria--);
+}
+
+/* ---------------------------------------------------------------------- */
+
+.rodape {
+    padding: 20px;
+    font-size: 1.25rem;
+    text-align: center;
+    color: var(--secundaria--);
+    font-family: var(--rubik--);
+    text-decoration: underline var(--terciaria--);
+    border-top: 4px solid var(--primaria--)
+}
+
+/* ---------------------------------------------------------------------- */
+
+@media (max-width: 2200px) {
+
+    .main {
+        padding: 1%;
+        gap: auto;
+    }
+
+    .main_textoimg {
+        display: flex;
+        flex-direction: column-reverse;
+        justify-content: center;
+        width: auto;
+
+    }
+
+    .main_textoimg2 {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+        width: auto;
+
+    }
+
+}
